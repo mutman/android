@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+			android:background="@drawable/shape"
+            android:orientation="vertical" 
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:padding="20dp"
+            android:id="@+id/maincontetn">
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:id="@+id/mainTittleTab "
+                android:textColor="#501764"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainContentTab"
+                android:textColor="@android:color/black" 
+                android:lineSpacingExtra="2dp"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="@dimen/content_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/quote"
+            android:layout_alignLeft="@id/maincontetn"
+        	android:layout_below="@+id/maincontetn"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tittleQuote"
+                android:textColor="#501764"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentQuote"
+                android:textColor="@android:color/black" 
+                android:lineSpacingExtra="2dp"                
+                />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="@dimen/content_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/doa"
+            android:layout_alignRight="@id/maincontetn"
+        	android:layout_below="@+id/maincontetn"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:id="@+id/titleDoa"
+                android:textColor="#501764"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentDoa"
+                android:textColor="@android:color/black" 
+                android:lineSpacingExtra="2dp"                
+                />
+
+        </LinearLayout>
+        
+		<LinearLayout
+            android:layout_width="@dimen/content_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:padding="10dp"
+            android:id="@+id/kisah"
+            android:layout_marginTop="10dp"
+        	android:layout_alignLeft="@id/quote"
+        	android:layout_below="@+id/quote"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:id="@+id/titleKisah"
+                android:textColor="#501764"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentKisah"
+                android:textColor="@android:color/black" 
+                android:lineSpacingExtra="2dp"                
+                />
+
+        </LinearLayout>
+        
+		<LinearLayout
+            android:layout_width="@dimen/content_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:padding="10dp"
+            android:id="@+id/lagu"
+            android:layout_marginTop="10dp"
+        	android:layout_alignLeft="@id/doa"
+        	android:layout_below="@+id/doa"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:id="@+id/titleLagu"
+                android:textColor="#501764"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentLagu"
+                android:textColor="@android:color/black" 
+                android:lineSpacingExtra="2dp"                
+                />
+
+        </LinearLayout>
+        <org.meruvian.midas.ui.BannerView 
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:banner="http://schemas.android.com/apk/res/org.mutiaraiman.droid"
+		    android:layout_width="300dp"
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="bottom"
+		    android:layout_centerHorizontal="true"
+		    banner:zoneId="4"
+		    banner:serverHost="ads.meruvian.org"
+		    banner:refreshInterval="10"
+		    android:layout_alignParentBottom="true">
+		</org.meruvian.midas.ui.BannerView>
+</RelativeLayout>

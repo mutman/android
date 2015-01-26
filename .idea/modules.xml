@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mutman.iml" filepath="$PROJECT_DIR$/Mutman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midas-core/midas-core.iml" filepath="$PROJECT_DIR$/midas-core/midas-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mutman/mutman.iml" filepath="$PROJECT_DIR$/mutman/mutman.iml" />
+    </modules>
+  </component>
+</project>
+

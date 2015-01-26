@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DarkTheme.Mutman">
+        <item name="android:actionBarStyle">@style/DarkTheme.Mutman.ActionBar</item>
+    </style>
+
+    <style name="DarkTheme.Mutman.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/second_color</item>
+    </style>
+</resources>

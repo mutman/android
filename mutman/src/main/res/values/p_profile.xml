@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="label_general">General</string>
+    <string name="label_name_first">First Name</string>
+    <string name="label_name_last">Last Name</string>
+    <string name="label_name_nick">Nickname</string>
+    <string name="label_email">Email</string>
+    <string name="label_industry">Industry</string>
+
+</resources>

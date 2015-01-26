@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_mutiara" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            android:drawablePadding="2dip"
+            android:drawableRight="@drawable/logo_merv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_footer"
+            android:textColor="@android:color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</FrameLayout>

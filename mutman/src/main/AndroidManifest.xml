@@ -1,0 +1,76 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.mutiaraiman.droid"
+    android:versionCode="24"
+    android:versionName="1.b24" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:icon="@drawable/ic_mik_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name="org.meruvian.midas.activity.MainSwipe" />
+        <activity android:name=".activity.PrayersActivity" />
+        <activity android:name=".activity.SinglePrayerActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        
+        <receiver android:name="org.meruvian.midas.activity.receiver.MidasReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <service
+            android:name=".service.PrayerSyncService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="org.mutiaraiman.droid.sync" />
+            </intent-filter>
+        </service>
+        
+        <provider
+            android:name=".provider.PrayerContentProvider"
+            android:authorities="org.mutiaraiman.droid.provider.prayercontentprovider"
+            android:syncable="true" >
+        </provider>
+        
+        <receiver android:name=".service.NotifyPrayerReceiver"/>
+        <activity android:name=".activity.MutiaraImanPreference"></activity>
+        
+    </application>
+
+</manifest>
